@@ -43,5 +43,4 @@ console.log('Using entry files: ' + entryFiles.join(', '));
 export default defineConfig({
     entry: entryFiles.map(e=>`./${e.replace(/\\/g, '/')}`),
     'tsconfig': './src/tsconfig.json',
-    dts: true,
 })
